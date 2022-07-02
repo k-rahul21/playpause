@@ -1,5 +1,5 @@
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
+import * as BsIcons from "react-icons/bs";
 import * as MdIcons from "react-icons/md";
 
 const SidebarData = [
@@ -7,7 +7,7 @@ const SidebarData = [
   {
     title: "Liked",
     path: "/liked",
-    icon: <AiIcons.AiTwotoneLike />,
+    icon: <BsIcons.BsFillSuitHeartFill />,
     cName: "nav-text",
   },
   {
