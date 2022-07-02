@@ -1,8 +1,13 @@
-.card-container {
+.card-container,
+.card-description,
+.card-title {
   display: flex;
+  flex-direction: row;
+}
+
+.card-container {
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 1rem;
   padding-top: 2rem;
 }
@@ -17,31 +22,30 @@
   height: 12rem;
 }
 
+.card-title,
+.card-description {
+  align-items: center;
+}
+
 .card-title {
-  display: flex;
   justify-content: space-between;
   margin: 0.5rem;
-  flex-direction: row;
-  align-items: center;
 }
 
 .card-title .card-title-header {
   font-size: 1rem;
 }
 
-.card-title .like-btn {
+.card-title .like-btn,
+.card-description .verified-icon {
   padding-top: 5px;
 }
 
 .card-description {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
   margin: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .card-description .verified-icon {
   margin-left: 5px;
-  padding-top: 5px;
 }
