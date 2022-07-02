@@ -10,11 +10,13 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding-top: 2rem;
+  margin-left: 2rem;
 }
 
 .card {
   width: 20rem;
-  box-shadow: #37474f 0px 0px 5px 1px;
+  cursor: pointer;
+  box-shadow: var(--secondary-color) 0px 0px 5px 1px;
 }
 
 .card-img {
