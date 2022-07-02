@@ -44,6 +44,8 @@
 .brand-name {
   gap: 0;
   cursor: pointer;
+  color: var(--black-color);
+  text-decoration: none;
 }
 
 .brand-name .brand-text {

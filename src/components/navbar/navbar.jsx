@@ -19,12 +19,12 @@ const Navbar = () => {
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <div className="brand-name">
+          <Link to="/" className="brand-name">
             <div className="brand-logo">
               <BsIcons.BsCollectionPlayFill />
             </div>
             <span className="brand-text">PlayPause</span>
-          </div>
+          </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
