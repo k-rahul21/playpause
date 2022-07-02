@@ -5,7 +5,6 @@ import { Category } from "../../components/category/Category";
 const Home = () => {
   return (
     <div className="container">
-      <Navbar />
       <Category />
       <Card />
     </div>
