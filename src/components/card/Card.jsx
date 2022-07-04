@@ -1,8 +1,6 @@
 import * as BsIcons from "react-icons/bs";
 import * as RiIcons from "react-icons/ri";
 import "./Card.css";
-import { useState, useEffect } from "react";
-import axios from "axios";
 
 const Card = (props) => {
   const {
