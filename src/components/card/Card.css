@@ -1,0 +1,59 @@
+.card-container,
+.card-description,
+.card-title,
+.card-title .card-cta {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+
+.card {
+  width: 20rem;
+  cursor: pointer;
+  box-shadow: var(--secondary-color) 0px 0px 5px 1px;
+}
+
+.card-img {
+  width: 100%;
+  height: 12rem;
+}
+
+.card-title,
+.card-description {
+  align-items: center;
+}
+
+.card-title {
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.card-title .card-title-header {
+  font-size: 1rem;
+}
+
+.card-title .like-btn,
+.card-title .watch-later-btn,
+.card-description .verified-icon {
+  padding-top: 5px;
+}
+
+.card-title .card-cta {
+  gap: 0.5rem;
+}
+
+.card-description {
+  justify-content: flex-start;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.card-description .verified-icon {
+  margin-left: 5px;
+}
