@@ -1,6 +1,7 @@
 .card-container,
 .card-description,
-.card-title {
+.card-title,
+.card-title .card-cta {
   display: flex;
   flex-direction: row;
 }
@@ -39,8 +40,13 @@
 }
 
 .card-title .like-btn,
+.card-title .watch-later-btn,
 .card-description .verified-icon {
   padding-top: 5px;
+}
+
+.card-title .card-cta {
+  gap: 0.5rem;
 }
 
 .card-description {

@@ -1,4 +1,5 @@
 import * as BsIcons from "react-icons/bs";
+import * as RiIcons from "react-icons/ri";
 import "./Card.css";
 
 const Card = () => {
@@ -12,8 +13,13 @@ const Card = () => {
         <div className="card-info">
           <div className="card-title">
             <h3 className="card-title-header">10 rules that changed my life</h3>
-            <div className="like-btn">
-              <BsIcons.BsFillSuitHeartFill />{" "}
+            <div className="card-cta">
+              <div className="like-btn">
+                <BsIcons.BsFillSuitHeartFill />
+              </div>
+              <div className="watch-later-btn">
+                <RiIcons.RiPlayListAddFill />
+              </div>
             </div>
           </div>
           <div className="card-description">
