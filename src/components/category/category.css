@@ -5,6 +5,7 @@
   justify-content: flex-start;
   gap: 1rem;
   margin: 1rem 0 0 2rem;
+  flex-wrap: wrap;
 }
 
 .category-name,
@@ -20,5 +21,11 @@
 
 .category-name-active {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--background-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .category-container {
+    justify-content: center;
+  }
 }

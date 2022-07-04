@@ -4,7 +4,7 @@ import { useVideo } from "../../contexts/video-listing-context";
 
 const Home = () => {
   const { availableVideos } = useVideo();
-  console.log(availableVideos);
+
   return (
     <div className="container">
       <Category />

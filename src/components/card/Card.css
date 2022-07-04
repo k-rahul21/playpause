@@ -7,9 +7,9 @@
 }
 
 .card-container {
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 2rem;
   margin-left: 2rem;
   padding-bottom: 2rem;
@@ -71,4 +71,10 @@
   justify-content: space-between;
   font-size: 0.8rem;
   margin: 0.1rem 0.5rem 0.5rem 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    justify-content: center;
+  }
 }

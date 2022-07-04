@@ -19,8 +19,6 @@ const VideoProvider = ({ children }) => {
     })();
   }, []);
 
-  console.log(availableVideos);
-
   return (
     <VideoContext.Provider value={{ availableVideos, setAvailableVideos }}>
       {children}
