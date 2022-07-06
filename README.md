@@ -6,8 +6,8 @@ playpause is video library application, where you can watch videos according to 
 
 ## Technologies used
 
--ReactJS
--CSS
--HTML
--JavaScript
--Mockbee (for mock backend)
+- ReactJS
+- CSS
+- HTML
+- JavaScript
+- Mockbee (for mock backend)
