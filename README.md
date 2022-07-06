@@ -26,10 +26,10 @@ playpause is video library application, where you can watch videos according to 
 ## How to install and run app locally?
 
 ```
-git clone https://github.com/k-rahul21/playpause.git
-cd playpause
-npm install
-npm start
+$ git clone https://github.com/k-rahul21/playpause.git
+$ cd playpause
+$ npm install
+$ npm start
 
 ```
 
