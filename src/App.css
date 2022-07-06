@@ -45,3 +45,9 @@
   color: var(--background-color);
   background-color: var(--secondary-color);
 }
+
+.divider {
+  width: 95%;
+  background-color: var(--secondary-color);
+  height: 1px;
+}
