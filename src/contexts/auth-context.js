@@ -20,10 +20,10 @@ const AuthProvider = ({ children }) => {
         setUser(response.data.foundUser);
         navigate("/");
       }
-      toast.success("login successful!!");
+      //   toast.success("login successful!!");
     } catch (error) {
       console.log(error);
-      toast.error("Login Failed, Try Again!!");
+      //   toast.error("Login Failed, Try Again!!");
     }
   };
 
@@ -38,10 +38,10 @@ const AuthProvider = ({ children }) => {
         setUser(response.data.createdUser);
         navigate("/");
       }
-      toast.success("Signup successful!!");
+      //   toast.success("Signup successful!!");
     } catch (error) {
       console.log(error);
-      toast.error("Signup Failed, Try Again!!");
+      //   toast.error("Signup Failed, Try Again!!");
     }
   };
 

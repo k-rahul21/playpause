@@ -28,9 +28,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="right-nav">
-            <div className="login-logo">
+            <Link to="/login" className="login-logo">
               <FaIcons.FaUserAlt />
-            </div>
+            </Link>
           </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>

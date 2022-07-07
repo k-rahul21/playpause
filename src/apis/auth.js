@@ -5,6 +5,7 @@ const signUpAPI = (user) => {
 };
 
 const loginAPI = (user) => {
+  console.log("API console", user);
   return axios.post("/api/auth/login", user);
 };
 
