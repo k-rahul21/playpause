@@ -17,7 +17,7 @@
 }
 
 .card {
-  width: 18rem;
+  width: 19rem;
   cursor: pointer;
   box-shadow: var(--secondary-color) 0px 0px 5px 1px;
 }

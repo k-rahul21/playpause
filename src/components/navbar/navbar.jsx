@@ -16,15 +16,22 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: "#222222" }}>
         <div className="navbar">
-          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
-          <Link to="/" className="brand-name">
-            <div className="brand-logo">
-              <BsIcons.BsCollectionPlayFill />
+          <div className="left-nav">
+            <Link to="#" className="menu-bars">
+              <FaIcons.FaBars onClick={showSidebar} />
+            </Link>
+            <Link to="/" className="brand-name">
+              <div className="brand-logo">
+                <BsIcons.BsCollectionPlayFill />
+              </div>
+              <span className="brand-text">PlayPause</span>
+            </Link>
+          </div>
+          <div className="right-nav">
+            <div className="login-logo">
+              <FaIcons.FaUserAlt />
             </div>
-            <span className="brand-text">PlayPause</span>
-          </Link>
+          </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>

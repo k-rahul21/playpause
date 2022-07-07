@@ -1,0 +1,56 @@
+.form {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5rem auto;
+}
+
+.signup-form .heading2 {
+  margin-bottom: 0.5rem;
+}
+
+.form .input-box {
+  margin-bottom: 0.5rem;
+}
+
+.heading2 {
+  font-size: 2rem;
+}
+
+.heading3 {
+  font-size: 1rem;
+}
+
+.welcome-msg,
+.input-name {
+  color: var(--secondary-color);
+  margin: 0.5rem 0;
+}
+
+.input-box {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border-color: var(--black-color);
+}
+
+button {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading2 {
+    font-size: 1.5rem;
+  }
+}
