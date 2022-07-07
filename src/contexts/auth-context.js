@@ -28,10 +28,10 @@ const AuthProvider = ({ children }) => {
   };
 
   const signupHandler = async (user) => {
-    console.log("entered signup");
+    console.log("entered signup", user);
     try {
       const response = await signUpAPI(user);
-      if (response.status === 200) {
+      if (response.status === 201) {
         localStorage.setItem("token", response.data.encodedToken);
         localStorage.setItem("user", JSON.stringify(response.data.createdUser));
         setToken(response.data.encodedToken);
