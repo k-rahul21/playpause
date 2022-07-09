@@ -51,3 +51,24 @@
   background-color: var(--secondary-color);
   height: 1px;
 }
+
+.secondary-btn {
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+}
+
+.action-btn,
+.secondary-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--black-color);
+}
+
+.action-btn {
+  background-color: var(--white-color);
+}
+
+.sign-up-link {
+  text-align: center;
+  color: var(--black-color);
+  text-decoration: none;
+}

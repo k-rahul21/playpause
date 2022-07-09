@@ -1,6 +1,7 @@
 import * as FaIcons from "react-icons/fa";
 import * as BsIcons from "react-icons/bs";
 import * as MdIcons from "react-icons/md";
+import * as RiIcons from "react-icons/ri";
 
 const SidebarData = [
   { title: "Home", path: "/", icon: <FaIcons.FaHome />, cName: "nav-text" },
@@ -20,6 +21,12 @@ const SidebarData = [
     title: "History",
     path: "/history",
     icon: <FaIcons.FaHistory />,
+    cName: "nav-text",
+  },
+  {
+    title: "Logout",
+    path: "/",
+    icon: <RiIcons.RiLoginCircleFill />,
     cName: "nav-text",
   },
 ];

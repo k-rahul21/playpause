@@ -1,9 +1,11 @@
 import { Card } from "../../components/card/Card";
 import { Category } from "../../components/category/Category";
+import { useAuth } from "../../contexts/auth-context";
 import { useVideo } from "../../contexts/video-listing-context";
 
 const Home = () => {
   const { availableVideos } = useVideo();
+  const { token } = useAuth();
 
   return (
     <div className="container">
