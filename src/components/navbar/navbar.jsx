@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
+import * as MdIcons from "react-icons/md";
 import { SidebarData } from "./sidebarData";
 import "./navbar.css";
 import { IconContext } from "react-icons";
+import { useAuth } from "../../contexts/auth-context";
 
 const Navbar = () => {
+  const { logoutHandler, isLoggedIn } = useAuth();
+  console.log(isLoggedIn);
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => {
     setSidebar(!sidebar);
@@ -28,9 +32,15 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="right-nav">
-            <Link to="/login" className="login-logo">
-              <FaIcons.FaUserAlt />
-            </Link>
+            {isLoggedIn ? (
+              <Link to="/" className="logout-logo" onClick={logoutHandler}>
+                <MdIcons.MdOutlineLogout />
+              </Link>
+            ) : (
+              <Link to="/login" className="login-logo">
+                <AiIcons.AiOutlineUser />
+              </Link>
+            )}
           </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>

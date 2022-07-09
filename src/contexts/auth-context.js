@@ -8,6 +8,7 @@ const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const loginHandler = async (user) => {
     console.log("entered login");
@@ -18,6 +19,7 @@ const AuthProvider = ({ children }) => {
         localStorage.setItem("user", JSON.stringify(response.data.foundUser));
         setToken(response.data.encodedToken);
         setUser(response.data.foundUser);
+        setIsLoggedIn(true);
         navigate("/");
       }
       //   toast.success("login successful!!");
@@ -36,6 +38,7 @@ const AuthProvider = ({ children }) => {
         localStorage.setItem("user", JSON.stringify(response.data.createdUser));
         setToken(response.data.encodedToken);
         setUser(response.data.createdUser);
+        setIsLoggedIn(true);
         navigate("/");
       }
       //   toast.success("Signup successful!!");
@@ -50,13 +53,21 @@ const AuthProvider = ({ children }) => {
 
     localStorage.removeItem("token");
     localStorage.removeItem("user");
+    setIsLoggedIn(false);
     setToken(null);
     setUser(null);
   };
 
   return (
     <AuthContext.Provider
-      value={{ token, user, loginHandler, signupHandler, logoutHandler }}
+      value={{
+        token,
+        user,
+        loginHandler,
+        signupHandler,
+        logoutHandler,
+        isLoggedIn,
+      }}
     >
       {children}
     </AuthContext.Provider>

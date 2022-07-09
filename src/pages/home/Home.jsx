@@ -7,8 +7,6 @@ const Home = () => {
   const { availableVideos } = useVideo();
   const { token } = useAuth();
 
-  console.log(token);
-
   return (
     <div className="container">
       <Category />
