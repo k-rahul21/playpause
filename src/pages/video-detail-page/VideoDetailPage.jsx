@@ -5,14 +5,15 @@ import { useVideo } from "../../contexts/video-listing-context";
 
 const VideoDetailPage = () => {
   const { videoId } = useParams();
-  const { availableVideos } = useVideo();
+  const {
+    videoState: { videoItems },
+  } = useVideo();
 
   function getVideoDetails(videos, videoId) {
     return videos.find((video) => video._id === videoId);
   }
 
-  const video = getVideoDetails(availableVideos, videoId);
-  console.log(video);
+  const video = getVideoDetails(videoItems, videoId);
   return <SinglePageCard {...video} />;
 };
 

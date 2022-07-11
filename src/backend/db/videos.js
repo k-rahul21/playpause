@@ -103,7 +103,7 @@ export const videos = [
   {
     _id: uuid(),
     url: "https://www.youtube.com/embed/GbfjAeHX4P0",
-    category: "Song",
+    category: "Music",
     cover: "https://i.ytimg.com/vi/GbfjAeHX4P0/hq720.jpg",
     title:
       "Pyaar Mangdi | Jassi Gill Ft Happy Raikoti | New Romantic Song 2021 | Avvy Sra | Yashika",
@@ -116,7 +116,7 @@ export const videos = [
   {
     _id: uuid(),
     url: "https://www.youtube.com/embed/L7mfjvdnPno",
-    category: "Song",
+    category: "Music",
     cover: "https://i.ytimg.com/vi/L7mfjvdnPno/hq720.jpg",
     title: "Trevor Daniel - Falling (Official Music Video)",
     date: "3 years ago",
@@ -128,7 +128,7 @@ export const videos = [
   {
     _id: uuid(),
     url: "https://www.youtube.com/embed/q-U5nCDAgtY",
-    category: "Song",
+    category: "Music",
     cover: "	https://i.ytimg.com/vi/q-U5nCDAgtY/hq720.jpg",
     title:
       "DILJIT DOSANJH: Black & White (Official Music Video) MoonChild Era | Intense | Raj Ranjodh",
@@ -141,7 +141,7 @@ export const videos = [
   {
     _id: uuid(),
     url: "https://www.youtube.com/embed/cl0a3i2wFcc",
-    category: "Song",
+    category: "Music",
     cover: "https://i.ytimg.com/vi/cl0a3i2wFcc/hq720.jpg",
     title: "Diljit Dosanjh - G.O.A.T. (Official Music Video)",
     date: "1.5 years ago",

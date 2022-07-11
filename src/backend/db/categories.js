@@ -18,4 +18,8 @@ export const categories = [
     _id: uuid(),
     categoryName: "Podcast",
   },
+  {
+    _id: uuid(),
+    categoryName: "Self help",
+  },
 ];

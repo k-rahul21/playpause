@@ -1,5 +1,4 @@
 const videoReducer = (videoState, videoAction) => {
-  console.log(videoAction);
   switch (videoAction.type) {
     case "FETCH_DATA":
       return {

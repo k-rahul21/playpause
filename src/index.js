@@ -19,17 +19,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <VideoProvider>
-        <AuthProvider>
-          <FilterProvider>
-            <LikeProvider>
-              <HistoryProvider>
-                <WatchlaterProvider>
-                  <App />
-                </WatchlaterProvider>
-              </HistoryProvider>
-            </LikeProvider>
-          </FilterProvider>
-        </AuthProvider>
+        <FilterProvider>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+        </FilterProvider>
       </VideoProvider>
     </Router>
   </React.StrictMode>,
